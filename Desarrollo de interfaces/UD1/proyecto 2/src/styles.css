@@ -1,0 +1,109 @@
+/* Reset universal para asegurar box-sizing: border-box */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Componente de Tarjeta de Perfil */
+.profile-card {
+  max-width: 350px;
+  width: 100%; /* Permite adaptabilidad en pantallas pequeñas */
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #000; /* Efecto Neo-brutalista elegante */
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #000;
+}
+
+/* Avatar de perfil */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #000;
+  object-fit: cover;
+  margin: 0 auto 15px auto;
+  display: block;
+  background-color: #e0e0e0;
+}
+
+/* Detalles del usuario */
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.profile-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.profile-bio {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Botones de acción/redes */
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.profile-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.profile-btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+
+.profile-btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.profile-btn-secondary {
+  background-color: #fff;
+  color: #000;
+}
+
+.profile-btn-secondary:hover {
+  background-color: #f0f0f0;
+}
